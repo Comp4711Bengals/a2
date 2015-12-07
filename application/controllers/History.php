@@ -22,6 +22,10 @@ class History extends CI_Controller {
         $this->load->model('Histories');
     }
     
+    /*
+     * Updates the hitsory table using the most recent date currently in the
+     * table as the since date.     
+     */
     function index()
     {
         $date = $this->histories->getMostRecent();
