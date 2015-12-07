@@ -18,8 +18,8 @@ class Leagues extends MY_Model {
         $sortedArray = array();
         switch ($sortByWhat)
         {
-            case 'netpts':
-                $this->db->order_by('netpts', 'asc');
+            case 'stand':
+                $this->db->order_by('netpts', 'desc');
                 $query = $this->db->get($this->_tableName);
                 $sortedArray = $query->result();
                 return $this->displayAll($sortedArray);

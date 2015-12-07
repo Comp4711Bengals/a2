@@ -103,7 +103,7 @@ class League extends Application {
     function league(){
         $this->data['pagebody'] = 'League/League';
         
-        $AllTeamsSource = $this->leagues->choose('team');
+        $AllTeamsSource = $this->leagues->choose('stand');
         $AllTeams = array();        
         foreach ($AllTeamsSource as $rec) {
                 $AllTeams[] = array(
