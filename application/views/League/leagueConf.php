@@ -4,11 +4,6 @@
         <button><a href="/League/layout/leagueDiv">Division</a></button>
         <button><a href="/League/layout/league">League</a></button>
         <br/>
-        Sort By:
-        <br/>
-        <button><a href="">City</a></button>
-        <button><a href="">Team</a></button>
-        <button><a href="">Standing (Net Points)</a></button>
         <br/>
         <h2>NFL Teams - American Football Conference</h2>
         <table class="table table-bordered tb">

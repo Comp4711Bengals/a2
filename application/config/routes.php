@@ -67,8 +67,9 @@ $route['Roster/page/Player/edit/(:num)'] = "Player/edit/$1";
 
 
 $route['League'] = 'League/league';
-$route['League/((team)|(stand)|(city))'] = 'League/test/$1';
-$route['League/layout/leagueConf/((team)|(stand)|(city))'] = 'League/layout/league/$1';
+$route['League/((team)|(stand)|(city))'] = 'League/team/$1';
+$route['League/leagueConf'] = 'League/conference';
+$route['League/leagueDiv'] = 'League/division';
 
 $route['History'] = "History";
 $route['Welcome/showTeam'] = "Welcome/showTeam"; 

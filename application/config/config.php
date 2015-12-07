@@ -9,7 +9,7 @@ $config['menu_choices'] = array(
         array('name' => '<strong>ROSTER</strong>', 'link' => '/Roster'),
         array('name' => '<strong>LEAGUE</strong>', 'link' => '/League'),
         array('name' => '<strong>ABOUT</strong>', 'link' => '/About'),
-        array('name' => '<string>History</strong>', 'link' => '/History')
+        array('name' => '<strong>UPDATE SCORES</strong>', 'link' => '/History')
         )
     );
 

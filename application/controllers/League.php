@@ -103,7 +103,7 @@ class League extends Application {
     function league(){
         $this->data['pagebody'] = 'League/League';
         
-        $AllTeamsSource = $this->leagues->choose('stand');
+        $AllTeamsSource = $this->leagues->choose('team');
         $AllTeams = array();        
         foreach ($AllTeamsSource as $rec) {
                 $AllTeams[] = array(
@@ -130,7 +130,7 @@ class League extends Application {
         $this->render();
     }
     
-    function test($filterBy)
+    function team($filterBy)
     {
         $this->data['pagebody'] = 'League/League';
         

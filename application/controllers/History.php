@@ -25,10 +25,7 @@ class History extends CI_Controller {
     function index()
     {
         $date = $this->histories->getMostRecent();
-        
-//        var_dump($date);
-//        die();
-        
+
         $list = array();
         $this->load->library('xmlrpc');
         $this->xmlrpc->server(RPCSERVER, RPCPORT);
@@ -44,13 +41,11 @@ class History extends CI_Controller {
         }
         $list = $this->xmlrpc->display_response();
         
-        var_dump($list);
-        die();
-        
         foreach($list as $record)
         {
             $this->histories->extract($record);
         }
+        Redirect("Welcome");
     }
     
 }
