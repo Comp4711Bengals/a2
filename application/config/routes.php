@@ -66,9 +66,11 @@ $route['Roster/page/Player/add'] = "Player/add";
 $route['Roster/page/Player/edit/(:num)'] = "Player/edit/$1";
 
 
-
 $route['League'] = 'League/league';
 $route['League/((team)|(stand)|(city))'] = 'League/test/$1';
 $route['League/layout/leagueConf/((team)|(stand)|(city))'] = 'League/layout/league/$1';
+
+$route['History'] = "History";
+$route['Welcome/showTeam'] = "Welcome/showTeam";
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
